@@ -18,6 +18,13 @@ body {
   background: radial-gradient(circle at center, #bcdeff 10%, #e5cbff 100%);
 }
 
+@media only screen and (max-width: 480px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+
 html.eraser * {
   cursor: url("/cursor-eraser.png"), auto !important;
 }
