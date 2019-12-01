@@ -157,7 +157,12 @@ small {
   flex-direction: column;
 }
 
+#___gatsby {
+  max-width: 100%;
+}
+
 main {
+  position: relative;
   max-width: 100%;
   height: auto;
   display: flex;
