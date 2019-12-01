@@ -21,7 +21,7 @@ function eraserEvent(event) {
   }
 }
 
-const Layout: FC = ({ children }) => {
+const Layout: FC<{ location: any }> = ({ children, location }) => {
   const [rellaxInit, setRellaxInit] = useState(false);
   const [konamiInit, setKonamiInit] = useState(false);
   const [konamiActive, setKonamiActive] = useState(false);

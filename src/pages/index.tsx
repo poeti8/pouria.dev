@@ -7,14 +7,15 @@ import Clock from "../../content/assets/clock-icon.svg";
 
 interface Props {
   data: any;
+  location: any;
 }
 
-const BlogIndex: FC<Props> = ({ data }) => {
+const BlogIndex: FC<Props> = ({ data, location }) => {
   const { title: siteTitle } = data.site.siteMetadata;
   const posts = data.allMarkdownRemark.edges;
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO title={siteTitle} />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug;

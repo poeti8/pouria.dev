@@ -6,13 +6,14 @@ import SEO from "../components/seo";
 
 interface Props {
   data: any;
+  location: any;
 }
 
-const PageTemplate: FC<Props> = ({ data }) => {
+const PageTemplate: FC<Props> = ({ data, location }) => {
   const post = data.markdownRemark;
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}

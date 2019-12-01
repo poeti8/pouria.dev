@@ -8,14 +8,15 @@ import Clock from "../../content/assets/clock-icon.svg";
 interface Props {
   data: any;
   pageContext: any;
+  location: any;
 }
 
-const BlogPostTemplate: FC<Props> = ({ data, pageContext }) => {
+const BlogPostTemplate: FC<Props> = ({ data, pageContext, location }) => {
   const post = data.markdownRemark;
   const { previous, next } = pageContext;
 
   return (
-    <Layout>
+    <Layout location={location}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
