@@ -91,7 +91,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 2.75rem 0 1rem;
+  margin: 2.25rem 0 1rem;
   font-family: "Lora", sans-serif;
   font-weight: 700;
   line-height: 1.15;
@@ -499,10 +499,6 @@ article ul p {
 
 article ul ul {
   margin: 0;
-}
-
-article ul li:first-child {
-  margin-top: 0;
 }
 
 article ul li:last-child {
