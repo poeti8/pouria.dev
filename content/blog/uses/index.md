@@ -4,6 +4,8 @@ date: "2019-12-01T10:35:49.363Z"
 description: "Apps, tools and gadgets that I use."
 ---
 
+![code](code.png)
+
 I'm not famous, nobody has ever asked me what I use, however, I felt the urge to tell you guys about it.
 To be honest, it's also a good reference for me to set up my workflow in a new environment.
 
@@ -50,6 +52,11 @@ Extensions:
 
 - Macbook Pro 2017, base model:
 - Custom built gaming PC:
+  - CPU: AMD Ryzen 5 2600
+  - GPU: GEFORCE GTX 1050 TI (4GB 128BIT GDDR5)
+  - RAM: 16GB, Crucial Ballistix Sport
+  - MOTHERBOARD: AB350-Gaming 3
+  - Micorsoft wireless mouse & keyboard (not gaming)
 
 #### Hardware
 
@@ -59,4 +66,4 @@ Extensions:
 
 #### Website
 
-This website has been built on top of [Gatsby](https://www.gatsbyjs.org/).
+This website has been built on top of [Gatsby](https://www.gatsbyjs.org/). You can find the source code on [GitHub](https://github.com/poeti8/pouria.dev);
