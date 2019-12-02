@@ -78,7 +78,7 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
   return (
     <>
       <div className="you-did-it">
-        <img src="you-did-it.jpg" alt="you did it" />
+        <img src="/you-did-it.jpg" alt="you did it" />
         <a
           id="you-did-it-link"
           href="http://kutt.it/bonus-btc"
