@@ -50,12 +50,12 @@ Extensions:
 
 #### Computers
 
-- Macbook Pro 2017, base model:
+- Macbook Pro 2017, 13" base model.
 - Custom built gaming PC:
   - CPU: AMD Ryzen 5 2600
   - GPU: GEFORCE GTX 1050 TI (4GB 128BIT GDDR5)
   - RAM: 16GB, Crucial Ballistix Sport
-  - MOTHERBOARD: AB350-Gaming 3
+  - Asus AB350-Gaming 3 motherboard
   - Micorsoft wireless mouse & keyboard (not gaming)
 
 #### Hardware
