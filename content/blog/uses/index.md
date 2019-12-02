@@ -66,4 +66,4 @@ Extensions:
 
 #### Website
 
-This website has been built on top of [Gatsby](https://www.gatsbyjs.org/). You can find the source code on [GitHub](https://github.com/poeti8/pouria.dev);
+This website has been built on top of [Gatsby](https://www.gatsbyjs.org/). You can find the source code on [GitHub](https://github.com/poeti8/pouria.dev).
