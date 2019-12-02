@@ -124,7 +124,7 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
         <footer id="main-footer">
           <div className="footer-nav-container">
             <p className="eye-emoji">👀</p>
-            <p>stuck me via:</p>
+            <p>stalk me via:</p>
             <nav>
               <ul>
                 <li>
