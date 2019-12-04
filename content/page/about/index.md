@@ -4,6 +4,8 @@ date: "2019-11-30T10:35:49.363Z"
 description: "Get to know more about me."
 ---
 
+![me](me.png)
+
 Hello there!
 
 I'm **Pouria**, a web developer based on Tehran. Been interested in design and web development since young age and while started with simple Photoshop, HTML/CSS and jQuery, these days I mostly work with:
