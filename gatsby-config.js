@@ -159,7 +159,7 @@ module.exports = {
             family: `Odibee Sans`,
           },
           {
-            family: `Lora`,
+            family: `Public Sans`,
             variants: [`400`, `700`],
           },
         ],
