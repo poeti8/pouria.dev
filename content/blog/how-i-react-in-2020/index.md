@@ -4,7 +4,7 @@ date: "2020-02-03T15:26:39.882Z"
 description: "Redux I love you, but you're bringing me down."
 ---
 
-I have been working with React for that past 3 years or so, and after experimenting and using various patterns and tools I think I have found my favorite way of doing things. Things that make me go to bed without thinking why I haven't through my laptop off a cliff. 
+I have been working with React for that past 3 years or so, and after experimenting and using various patterns and tools I think I have found my favorite way of doing things. Things that make me go to bed without thinking "why haven't I thrown my laptop off a cliff?". 
 
 These are solely based on my **personal experience**, I'm sure you can always find better a approache to solve every problem, but as of now, this is how I code React in 2020.
 
