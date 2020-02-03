@@ -19,7 +19,6 @@ Let's start!
 
 Extensions:
 
-- [Bracket Pair Colorizer 2](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2): Colorize brackets. Makes it easy to find the scope. Pretty too.
 - [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv): Syntax highlighting for .env files.
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Lint JavaScript and TypeScript. Constantly reminds me I'm stupid because of importing modules that I don't use.
 - [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph): Git graphs inside editor.
@@ -40,11 +39,14 @@ Extensions:
 - [Firefox](https://telegram.org) for both development and browsing.
 - [IINA](https://iina.io/), modern media player.
 - [iTerm2](https://iterm2.com) + [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) is my default terminal. Using the same theme as VS Code with Menlo font.
+- [Notion](https://www.notion.so/), writing posts like this with it.
 - [Pocket](https://app.getpocket.com/), to bookmark and save content.
 - [PopClip](https://pilotmoon.com/popclip/), handly little app to perform actions when you select a text.
+- [Port Manager](https://portmanager.app/), view and kill ports from status bar.
 - [Postman](https://www.getpostman.com/), API client.
+- [RunJS](https://runjs.dev/), JavaScript scratchpad and playground.
 - [Spotify](https://www.spotify.com/) for music. [Follow me](https://open.spotify.com/user/poeti8?si=Goqu-edXSuO9EH3KKbUzoQ) for epic playlists.
-- [Telegram](https://telegram.org) is my favorite messenger. Lovely app.
+- [Telegram](https://telegram.org), my favorite messenger. Lovely app.
 - [TickTick](https://ticktick.com), for TODOs. Tried so many apps before, but this one is really simple and fast to use. Great integration too.
 - [Winds](https://getstream.io/winds/), for RSS and podcast.
 

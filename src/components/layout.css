@@ -31,6 +31,16 @@ body.all-erased {
   background: none;
 }
 
+pre {
+  font-size: 14px;
+}
+
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 2px;
+  background-color: hsl(210, 100%, 94%);
+}
+
 .you-did-it {
   width: 100%;
   display: none;
@@ -166,11 +176,18 @@ main {
   height: auto;
   display: flex;
   flex-direction: column;
-  padding: 32px;
+  padding: 48px;
   background-color: white;
   border-radius: 1px;
   box-shadow: 0px 2px 5px 0px rgba(80, 80, 80, 0.1);
   z-index: 1;
+}
+
+figcaption {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
 }
 
 header.main {
@@ -182,6 +199,10 @@ header.main {
 nav {
   width: 100%;
   display: flex;
+}
+
+main nav {
+  margin-top: 32px;
 }
 
 header nav {
