@@ -1,7 +1,7 @@
 ---
 title: How I React in 2020
 date: "2020-02-03T15:26:39.882Z"
-description: "Apps, tools and gadgets that I use."
+description: "Redux I love you, but you're bringing me down."
 ---
 
 I have been working with React for that past 3 years or so, and after experimenting and using various patterns and tools I think I have found my favorite way of doing things. Things that make me go to bed without thinking why I haven't through my laptop off a cliff. 
