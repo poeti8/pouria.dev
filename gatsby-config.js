@@ -12,10 +12,10 @@ module.exports = {
     },
     japaneseWords: ["波", "愛", "神", "紫", "夢", "雨", "音"],
     quotes: [
-      "My eyesight got worse when building this website.",
+      "My eyesight got worse while building this website.",
       "I created The Devs network while listening to Danny Brown.",
-      "I got the total number of 0 matches on Tinder.",
-      "I could publish this website at least 2 weeks sooner if I hadn't used TypeScript.",
+      "I got a total of 0 matches on Tinder.",
+      "I could have published this website at least 2 weeks earlier if I hadn't used TypeScript.",
       "I care about my website being responsive so much, I just hope you're not visiting from mobile.",
     ],
   },
