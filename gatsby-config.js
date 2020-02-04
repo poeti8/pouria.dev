@@ -10,7 +10,7 @@ module.exports = {
       email: `hi@pouria.dev`,
       rss: `hi@pouria.dev`,
     },
-    japaneseWords: ["波", "愛", "神", "紫", "夢", "雨", "音"],
+    japaneseWords: ["波", "愛", "神", "紫", "夢", "雨", "音", "草"],
     quotes: [
       "My eyesight got worse while building this website.",
       "I created The Devs network while listening to Danny Brown.",
