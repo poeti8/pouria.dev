@@ -54,9 +54,11 @@ const E = () => {
 
 const Help = () => {
   return (
-    <M />
-    <E />
-    // long jsx
+    <>
+      <M />
+      <E />
+      { /* long jsx */ }
+    </>
   )
 }
 ```
