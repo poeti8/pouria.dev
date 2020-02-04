@@ -14,6 +14,7 @@ module.exports = {
     quotes: [
       "My eyesight got worse while building this website.",
       "I created The Devs network while listening to Danny Brown.",
+      "My favorite hobby is spending days to create Spotify playlists and never listen to them.",
       "I got a total of 0 matches on Tinder.",
       "I could have published this website at least 2 weeks earlier if I hadn't used TypeScript.",
       "I care about my website being responsive so much, I just hope you're not visiting from mobile.",
