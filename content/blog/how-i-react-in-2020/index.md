@@ -16,7 +16,7 @@ The **IntelliSense** and the ability to inspect the code or catch errors without
 
 The tooling for libraries and frameworks and the community around them is simply amazing. Many of them are moving to TypeScript these days or have a separate `@types` package that you can install.
 
-```typescript
+```tsx
 /* Modal.jsx */
 
 interface Props {
@@ -39,7 +39,7 @@ And in one file. From the moment I opened my eyes to the world to this day, all 
 
 Today my components are long, strong and healthy. I would only break them down into multiple components if they contain complex states, which in that case, I'm going to put them into the **same file**. I find it easier to search, navigate and develop in a single rather than multiple files in a folder.
 
-```typescript
+```tsx
 /* Page.jsx */
 
 const M = () => {
@@ -96,7 +96,7 @@ I use internal state hooks for the components and only use global state when dat
 
 For the global state I have tried some libraries and I liked all of them but so far don't have a strong opinion on one because I tend to use internal state a lot more (I guess that's good?). Nonetheless, I'd usually choose one based on how well they support TypeScript and SSR.
 
-```typescript
+```tsx
 const VibeCheck = () => {
   const isAuthenticated = useStoreState(); // Global state
   const [loading, setLoading] = useState();
@@ -121,6 +121,33 @@ I use Gatsby to generate static websites and although I can do the same with Nex
 Long story short, I hate webpack config and if I have to do it manually, I rather write jQuery.
 
 ![PageSpeed insight for pouria.dev](lighthouse.png "PageSpeed insight for pouria.dev")
+
+### Styles.
+
+My one and only approach is CSS-in-JS. I have been using [styled-components](https://styled-components.com) since day one. [Rebass](https://rebassjs.org/) and [theme-ui](https://theme-ui.com) are a deadly combination that allow me to create custom themable components where helper options like padding, margin, flex and etc are added to each of them. 
+
+I'm planning to use [emotion](https://emotion.sh) in future, mostly because the above libraries use emotion internally and I want to get leverage of the consistency and performance. Another reason is I get weird type errors and conflicts, I'd usually have to use a strict version to make sure everything is compiling, otherwise I'm gonna spend my day hitting my head on the desk. 
+
+```tsx
+const Alert = styled(Flex)`
+  ${ /* styles... */ }
+`;
+
+const Launch = () => {
+  <Alert
+    alignItems={["center", "flex-start"]}
+    fontSize={[16, 18]}
+    px={[2, 3, 3, 4]}
+    m={2}
+  >
+    Group action in 5 minutes.
+  </Alert>
+}
+```
+
+### Debugging.
+
+`console.log()`.
 
 ### Wrapping up.
 
