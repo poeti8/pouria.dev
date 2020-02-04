@@ -33,7 +33,7 @@ const Modal: FC<Props> = props => {
 
 There are some cases where I feel like it's bringing my development speed down with pointless errors on unnecessary types. In these situations, I don't really mind hack my way around it (I'd use `any` or something), because after all, these tools are meant to establish a good developer experience and not to keep them busy with things that don't eventually affect the end product.
 
-### Components, long and several.
+### Components: long, and several.
 
 And in one file. From the moment I opened my eyes to the world to this day, all I saw in React projects was one component per file and it never occurred to me to question the approach or think why. I just went with it. Well, no more.
 
