@@ -124,9 +124,9 @@ Long story short, I hate webpack config and if I have to do it manually, I rathe
 
 ### Styles.
 
-My one and only approach is CSS-in-JS. I have been using [styled-components](https://styled-components.com) since day one. [Rebass](https://rebassjs.org/) and [theme-ui](https://theme-ui.com) are a deadly combination that allow me to create custom themable components where helper options like padding, margin, flex and etc are added to each of them. 
+My only approach is CSS-in-JS. I've been using [styled-components](https://styled-components.com) since day one. [Rebass](https://rebassjs.org/) and [theme-ui](https://theme-ui.com) is a deadly combination that allows me to create custom, themeable components where helper options like `padding`, `margin`, `flex`, etc. are added to each of them.
 
-I'm planning to use [emotion](https://emotion.sh) in future, mostly because the above libraries use emotion internally and I want to get leverage of the consistency and performance. Another reason is I get weird type errors and conflicts, I'd usually have to use a strict version to make sure everything is compiling, otherwise I'm gonna spend my day hitting my head on the desk. 
+I'm planning to use [emotion](https://emotion.sh) in the future, mostly because the above libraries use emotion internally and I want to leverage the consistency and performance. Another reason is that I get weird type errors and conflicts, and I'd usually have to use a strict version to make sure everything compiles. Otherwise I'm gonna spend my day hitting my head on the desk, considering throwing my laptop off a cliff.
 
 ```tsx
 const Alert = styled(Flex)`
