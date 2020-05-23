@@ -3,9 +3,9 @@ title: Unit test Express handlers
 date: "2020-05-23T15:26:39.882Z"
 description: "Epicly."
 ---
-When I wanted to start testing my Express app I had so many questions; Do I need an Express app? What should I test? What should I mock? Should I mock database too? Why did my father left me when I was 4?
+When I wanted to start testing my Express app I had so many questions; do I need an Express app? What should I test? What should I mock? Should I mock the database too? Why did my father leave me when I was 4?
 
-Although there might not be a "correct" answer to questions above, but I've found an approach that not only works but it's also something that I find it easy to wrap my head around.
+There might not be a "correct" answer to questions above, but I've found an approach that not only works but is also something that I find it easy to wrap my head around.
 
 Our goal is to test individual middleware functions (so called **handlers**) to make sure that they respond with the expected output for any given input.
 
@@ -34,7 +34,7 @@ Here's a dead simple handler that simply responds with `pong` to any request:
 const ping = (req, res) => res.status(200).send("pong");
 ```
 
-What does this function needs to run independently? The answer is a `req` object and a `res` object. So if we manage to implement our own request and response object we should be able to run the handler and inspect the result **without** an Express server.
+What does this function need to run independently? The answer is a `req` object and a `res` object. So if we manage to implement our own request and response object we should be able to run the handler and inspect the result **without** an Express server.
 
 ```javascript
 /* handlers.test.js */
@@ -69,11 +69,11 @@ describe("ping", () => {
 });
 ```
 
-The above test works, but it seems a bit hacky. What if we wanted to use another response method or wanted to access something from request? It'd be too much for ourself to try to mock everything, maybe there's somebody out there that already did it for us? Well, yes! 
+The above test works, but it seems a bit hacky. What if we wanted to use another response method or wanted to access something from request? It'd be too much to try to mock everything by ourselves, so maybe there's somebody out there that has already done it for us? Well, yes! 
 
 We can use [jest-express](https://github.com/jameswlane/jest-express), it's a helpful library that replicates the functionality of an Express server using Jest mock functions which would let us to test the behavior of our mocked functions using **built-in** Jest methods.
 
-Another improvement we can go for is to use Jest's `beforeEach()` method to prepare our mocks before starting each test and avoid repeating ourself by writing them every time.
+Another improvement we can go for is to use Jest's `beforeEach()` method to prepare our mocks before starting each test and avoid repeating ourselves by writing them every time.
 
 ```javascript
 /* handlers.test.js */
@@ -164,7 +164,7 @@ const getPrice = async (req, res) => {
 app.get("/price", helpers.cryptoClient, handlers.getPrice);
 ```
 
-Ok, great. We moved the responsibility from the handler, now it's time to test if everything is going to work fine:
+Ok, great. We've moved the responsibility away from the handler, now it's time to test if everything works fine:
 
 ```javascript
 /* handlers.test.js */
@@ -252,7 +252,7 @@ const createUser = async (req, res) => {
 
 Here we can take the same approach as before and mock the mongoose (or any used ORM/ODM) package, but I personally prefer to use a dedicated **real database** to make sure data goes in and out well and as expected. 
 
-We can create a **separate database** for our tests, or even better, we can use a package called [mongodb-memory-server](https://github.com/nodkz/mongodb-memory-server) which is an in memory MongoDB server and since it stores the data in memory, it takes care of **clearing** the stored data and having a **fresh database** on each run, which makes it perfect for test environment.
+We can create a **separate database** for our tests, or even better, we can use a package called [mongodb-memory-server](https://github.com/nodkz/mongodb-memory-server) which is an in memory MongoDB server and since it stores the data in memory, it takes care of **clearing** the stored data and having a **fresh database** on each run, which makes it perfect for a test environment.
 
 So let's install and prepare it for our tests:
 
@@ -339,7 +339,7 @@ describe("handlers", () => {
 });
 ```
 
-Look ma, I wrote unit tests and they're passed !!1!
+Look ma, I wrote unit tests and they passed !!1!
 
 ### Furthermore.
 
@@ -349,4 +349,4 @@ And although the concept stays the same, we make our life easier by using tools 
 
 So at the end, even if you're like me and don't write tests, at least now you know how to do them and can feel good about yourself.
 
-P.S. My dad left me when I was 4 to get ice cream for me and came back minutes later.
+P.S. My dad left me when I was 4 to get me ice cream and came back 5 minutes later.
