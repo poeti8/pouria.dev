@@ -5,7 +5,7 @@ description: "Epicly."
 ---
 When I wanted to start testing my Express app I had so many questions; do I need an Express app? What should I test? What should I mock? Should I mock the database too? Why did my father leave me when I was 4?
 
-There might not be a "correct" answer to the questions above, but I've found an approach that not only works but is also something that I find it easy to wrap my head around.
+There might not be a "correct" answer to the questions above, but I've found an approach that not only works but is also something that I find easy to wrap my head around.
 
 Our goal is to test individual middleware functions (so called **handlers**) to make sure that they respond with the expected output for any given input.
 
