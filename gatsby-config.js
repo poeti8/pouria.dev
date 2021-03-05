@@ -18,6 +18,7 @@ module.exports = {
       "I got a total of 0 matches on Tinder.",
       "I could have published this website at least 2 weeks earlier if I hadn't used TypeScript.",
       "I care about my website being responsive so much, I just hope you're not visiting from mobile.",
+      "My dad left me when I was 4 to get me ice cream and came back 5 minutes later."
     ],
   },
   plugins: [
