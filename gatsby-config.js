@@ -155,17 +155,10 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          {
-            family: `Odibee Sans`,
-          },
-          {
-            family: `Public Sans`,
-            variants: [`400`, `700`],
-          },
-        ],
+        fonts: [`Odibee Sans`, `Public Sans\:300,700,`],
+        display: "swap",
       },
     },
   ],

@@ -14,51 +14,48 @@ Let's start!
 #### Editor
 
 - [Visual Studio Code](https://code.visualstudio.com) has been my main editor for the past +3 years. Love it.
-- [SynthWave '84](https://marketplace.visualstudio.com/items?itemName=RobbOwen.synthwave-vscode) is the theme. Yes, I like puprle. A lot.
+- [ｖａｐｏｒｗａｖｅ](https://marketplace.visualstudio.com/items?itemName=this-fifo.vaporwave-theme-vscode) is the theme. Yes, I like puprle. A lot.
 - [Cascadia Code](https://github.com/microsoft/cascadia-code) with ligatures on is the font I'm using.
 
 Extensions:
 
 - [DotENV](https://marketplace.visualstudio.com/items?itemName=mikestead.dotenv): Syntax highlighting for .env files.
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint): Lint JavaScript and TypeScript. Constantly reminds me I'm stupid because of importing modules that I don't use.
-- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph): Git graphs inside editor.
-- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): Honestly, it has too many features I'm not even sure which ones I'm using.
 - [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Format and beautify code.
-- [Project Manager](https://marketplace.visualstudio.com/items?itemName=alefragnani.project-manager): Manage projects (Save, open, delete, etc).
 - [TODO Highlight](https://marketplace.visualstudio.com/items?itemName=wayou.vscode-todo-highlight): Highlight todos in the code.
 - [Toggle Quotes](https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes): Toggle quotes. Very useful in JavaScript.
 - [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components): styled-components syntax highlighter.
 
 #### Desktop apps
 
-- [Adobe XD](https://www.adobe.com/products/xd.html) to design interfaces.
 - [Alfred](https://www.alfredapp.com), launcher with tons of features.
 - [Cmder](https://cmder.net/), my go-to terminal when I'm on Windows.
 - [Compass](https://www.mongodb.com/products/compass), a GUI to manage MongoDB.
 - [Dozer](https://github.com/Mortennn/Dozer/) to hide status bar icons
+- [Figma](https://www.adobe.com/products/xd.html) to design interfaces.
 - [Firefox](https://telegram.org) for both development and browsing.
 - [IINA](https://iina.io/), modern media player.
-- [iTerm2](https://iterm2.com) + [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) is my default terminal. Using the same theme as VS Code with Menlo font.
+- [iTerm2](https://iterm2.com) + [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) is my default terminal. Using the same theme as VS Code with Meslo font.
+- [Muse](https://github.com/xzzz9097/Muse) I control Spotify in touchbar with this little app.
 - [Notion](https://www.notion.so/), writing posts like this with it.
 - [Pocket](https://app.getpocket.com/), to bookmark and save content.
 - [PopClip](https://pilotmoon.com/popclip/), handly little app to perform actions when you select a text.
-- [Port Manager](https://portmanager.app/), view and kill ports from status bar.
 - [Postman](https://www.getpostman.com/), API client.
 - [RunJS](https://runjs.dev/), JavaScript scratchpad and playground.
 - [Spotify](https://www.spotify.com/) for music. [Follow me](https://open.spotify.com/user/poeti8?si=Goqu-edXSuO9EH3KKbUzoQ) for epic playlists.
 - [Telegram](https://telegram.org), my favorite messenger. Lovely app.
 - [TickTick](https://ticktick.com), for TODOs. Tried so many apps before, but this one is really simple and fast to use. Great integration too.
-- [Winds](https://getstream.io/winds/), for RSS and podcast.
 
 #### Computers
 
-- Macbook Pro 2017, 13" base model.
-- Custom built gaming PC:
+- Macbook Pro 2020 M1, 13" 512 GB SSD.
+- Custom built PC:
   - CPU: AMD Ryzen 5 2600
-  - GPU: GEFORCE GTX 1050 TI (4GB 128BIT GDDR5)
+  - GPU: GEFORCE GTX 1080 TI (11GB 352BIT GDDR5X)
   - RAM: 16GB, Crucial Ballistix Sport
   - Asus AB350-Gaming 3 motherboard
-  - Micorsoft wireless mouse & keyboard (not gaming)
+  - Keyboard: Logitech G Pro
+  - Mouse: Logitech MX Master 2S
 
 #### Hardware
 
