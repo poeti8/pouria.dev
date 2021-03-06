@@ -32,8 +32,8 @@ Extensions:
 - [Cmder](https://cmder.net/), my go-to terminal when I'm on Windows.
 - [Compass](https://www.mongodb.com/products/compass), a GUI to manage MongoDB.
 - [Dozer](https://github.com/Mortennn/Dozer/) to hide status bar icons
-- [Firefox](https://telegram.org) for both development and browsing.
 - [Figma](https://www.adobe.com/products/xd.html) to design interfaces.
+- [Firefox](https://telegram.org) for both development and browsing.
 - [IINA](https://iina.io/), modern media player.
 - [iTerm2](https://iterm2.com) + [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) is my default terminal. Using the same theme as VS Code with Meslo font.
 - [Muse](https://github.com/xzzz9097/Muse) I control Spotify in touchbar with this little app.
