@@ -14,7 +14,7 @@ Let's start!
 #### Editor
 
 - [Visual Studio Code](https://code.visualstudio.com) has been my main editor for the past +3 years. Love it.
-- [ｖａｐｏｒｗａｖｅ](https://marketplace.visualstudio.com/items?itemName=this-fifo.vaporwave-theme-vscode) is the theme. Yes, I like puprle. A lot.
+- [ｖａｐｏｒｗａｖｅ](https://marketplace.visualstudio.com/items?itemName=this-fifo.vaporwave-theme-vscode) is the theme. Yes, I like purple. A lot.
 - [Cascadia Code](https://github.com/microsoft/cascadia-code) with ligatures on is the font I'm using.
 
 Extensions:
@@ -36,10 +36,10 @@ Extensions:
 - [Firefox](https://www.mozilla.org/en-US/firefox/developer/) for both development and browsing.
 - [IINA](https://iina.io/), modern media player.
 - [iTerm2](https://iterm2.com) + [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) is my default terminal. Using the same theme as VS Code with Meslo font.
-- [Muse](https://github.com/xzzz9097/Muse) I control Spotify in touchbar with this little app.
+- [Muse](https://github.com/xzzz9097/Muse) I control Spotify in TouchBar with this little app.
 - [Notion](https://www.notion.so/), writing posts like this with it.
 - [Pocket](https://app.getpocket.com/), to bookmark and save content.
-- [PopClip](https://pilotmoon.com/popclip/), handly little app to perform actions when you select a text.
+- [PopClip](https://pilotmoon.com/popclip/), handy little app to perform actions when you select a text.
 - [Postman](https://www.getpostman.com/), API client.
 - [RunJS](https://runjs.dev/), JavaScript scratchpad and playground.
 - [Spotify](https://www.spotify.com/) for music. [Follow me](https://open.spotify.com/user/poeti8?si=Goqu-edXSuO9EH3KKbUzoQ) for epic playlists.
@@ -48,10 +48,10 @@ Extensions:
 
 #### Computers
 
-- Macbook Pro 2020 M1, 13" 512 GB SSD.
+- MacBook Pro 2020 M1, 13" 512 GB SSD.
 - Custom built PC:
   - CPU: AMD Ryzen 5 2600
-  - GPU: GEFORCE GTX 1080 TI (11GB 352BIT GDDR5X)
+  - GPU: GeForce GTX 1080 Ti (11GB 352BIT GDDR5X)
   - RAM: 16GB, Crucial Ballistix Sport
   - Asus AB350-Gaming 3 motherboard
   - Keyboard: Logitech G Pro
