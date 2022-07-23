@@ -59,10 +59,10 @@ describe("ping", () => {
       return res;
     };
 
-    // Execure our handler with our request and response objects
+    // Execute our handler with our request and response objects
     await handlers.ping(req, res);
 
-    // Test if the reponse is what we expect
+    // Test if the response is what we expect
     expect(resStatus).toBe(200);
     expect(resBody).toBe("pong");
   });
@@ -193,7 +193,7 @@ describe("getPrice", () => {
     expect(res.send).toHaveBeenCalledWith(mockData);
   });
 
-  it("should throw expected error when getging BTC price in USD", async () => {
+  it("should throw expected error when getting BTC price in USD", async () => {
     const mockData = { price: 7821, currency: "USD" };
     // Mock our external call and tell it to reject
     req.crypto.getPriceInUSD = jest.fn().mockRejectedValueOnce();
@@ -344,7 +344,7 @@ Look ma, I wrote unit tests and they passed !!1!
 
 We're almost done here. My goal was to show you how to start simple with tests and add components to them one by one as handlers get more and more complex so you would just get the idea.
 
-And although the concept stays the same, we make our life easier by using tools and helpers in our tests. For example, instead of hardcoding user data, we can use [faker.js](https://github.com/marak/Faker.js) to generate realistic fake data.
+And although the concept stays the same, we make our life easier by using tools and helpers in our tests. For example, instead of hard coding user data, we can use [faker.js](https://github.com/marak/Faker.js) to generate realistic fake data.
 
 So at the end, even if you're like me and don't write tests, at least now you know how to do them and can feel good about yourself.
 
