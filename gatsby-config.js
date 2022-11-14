@@ -5,7 +5,6 @@ module.exports = {
     description: `Thoughts that keep me awake at night.`,
     siteUrl: `https://pouria.dev`,
     social: {
-      twitter: `poeti8`,
       github: `poeti8`,
       spotify: `poeti8`,
       telegram: `poeti8`,
@@ -15,12 +14,12 @@ module.exports = {
     japaneseWords: ["波", "愛", "神", "紫", "夢", "雨", "音", "草"],
     quotes: [
       "My eyesight got worse while building this website.",
-      "I created The Devs network while listening to Danny Brown.",
-      "My favorite hobby is spending days to create Spotify playlists and never listen to them.",
+      "My favorite hobby is spending days to create Spotify playlists and never listen to them again.",
       "I got a total of 0 matches on Tinder.",
       "I could have published this website at least 2 weeks earlier if I hadn't used TypeScript.",
       "I care about my website being responsive so much, I just hope you're not visiting from mobile.",
-      "My dad left me when I was 4 to get me ice cream and came back 5 minutes later."
+      "This website is not tested, proceed with caution !!1!",
+      "Try ↑ ↑ ↓ ↓ ← → ← → B A.",
     ],
   },
   plugins: [
@@ -96,7 +95,7 @@ module.exports = {
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
+              return allMarkdownRemark.edges.map((edge) => {
                 return Object.assign({}, edge.node.frontmatter, {
                   description:
                     edge.node.frontmatter.description || edge.node.excerpt,
