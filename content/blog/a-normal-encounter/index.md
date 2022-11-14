@@ -63,7 +63,7 @@ I wondered to myself “He knows me?”. Last time I was here was a month ago. A
 
 But it could be the case we’re not as much as a ghost as we think. Perhaps people that we never had even a close interaction with think of us more than what we usually imagine, just like when we think of a person without that person ever realizing it.  
 
-### The god why is this post taking too long what am I even talking about at this point.
+### The god why is this post taking too long what am I even rambling about at this point.
 
 We’re small and we do small things every day but that’s mostly what we’re made of. They may seem insignificant, but that doesn’t mean that they are not meaningful.  We can give life and keep moments or things alive by simply noticing them mindfully and not let them to be forgotten so easily.
 
