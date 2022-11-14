@@ -7,8 +7,10 @@ module.exports = {
     social: {
       twitter: `poeti8`,
       github: `poeti8`,
+      spotify: `poeti8`,
+      telegram: `poeti8`,
       email: `hi@pouria.dev`,
-      rss: `hi@pouria.dev`,
+      rss: `rss.xml`,
     },
     japaneseWords: ["波", "愛", "神", "紫", "夢", "雨", "音", "草"],
     quotes: [

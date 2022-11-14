@@ -13,7 +13,7 @@ function eraserEvent(event) {
   if (((event.target as any).nodeName || "").toLowerCase() === "html") {
     const erased = document.querySelectorAll(".erased");
     document.body.classList.add("all-erased");
-    erased.forEach(node => node.classList.remove("erased"));
+    erased.forEach((node) => node.classList.remove("erased"));
     window.removeEventListener("click", eraserEvent);
     document.documentElement.classList.remove("eraser");
   } else {
@@ -36,8 +36,9 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
             quotes
             japaneseWords
             social {
-              twitter
               github
+              spotify
+              telegram
               email
               rss
             }
@@ -47,13 +48,8 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
     `
   );
 
-  const {
-    title,
-    description,
-    social,
-    quotes,
-    japaneseWords,
-  } = data.site.siteMetadata;
+  const { title, description, social, quotes, japaneseWords } =
+    data.site.siteMetadata;
 
   useEffect(() => {
     if (rellaxInit) return;
@@ -67,8 +63,8 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
     konami(() => {
       setKonamiActive(true);
       const links = document.querySelectorAll("a:not(#you-did-it-link)");
-      links.forEach(link => {
-        link.addEventListener("click", e => e.preventDefault());
+      links.forEach((link) => {
+        link.addEventListener("click", (e) => e.preventDefault());
       });
       window.addEventListener("click", eraserEvent);
       document.documentElement.classList.add("eraser");
@@ -129,16 +125,7 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
               <ul>
                 <li>
                   <a
-                    href={`http://twitter.com/${social.twitter}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    twitter
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href={`http://github.com/${social.github}`}
+                    href={`https://github.com/${social.github}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -146,10 +133,28 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
                   </a>
                 </li>
                 <li>
+                  <a
+                    href={`https://open.spotify.com/user/${social.spotify}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    spotify
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={`https://t.me/${social.telegram}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    telegram
+                  </a>
+                </li>
+                <li>
                   <a href={`mailto:${social.email}`}>email</a>
                 </li>
                 <li>
-                  <a href="/rss.xml" target="_blank">
+                  <a href={`/${social.rss}`} target="_blank">
                     rss
                   </a>
                 </li>
