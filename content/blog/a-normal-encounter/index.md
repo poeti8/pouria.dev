@@ -1,6 +1,6 @@
 ---
 title: A normal encounter
-date: "2022-11-02T17:00:00.882Z"
+date: "2022-11-14T11:00:00.882Z"
 description: "The meaningful insignificant."
 ---
 
