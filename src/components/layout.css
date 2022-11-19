@@ -451,6 +451,13 @@ article a {
   border-bottom: 1px dotted rgb(250, 103, 255);
 }
 
+article img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
 article blockquote {
   font-style: italic;
   border-left: 5px solid #bbb;

@@ -2,11 +2,13 @@
 title: "404: Not found"
 date: "2019-11-30T10:35:49.363Z"
 description: "The page you're looking for does not exist."
+emoji: 🐚
 ---
 
-![crying](crying-cat.jpg)
+![sad](sad.gif)
 
-This makes me very sad.
-You came all around here to visit my website and yet I can't provide the one page that you're looking for. (ಥ_ಥ)
+This makes me sad.
 
-Feel free to contact me if you think there's something I can do.
+You came all the way around here to visit my website and yet I couldn't provide you the one page that you were looking for.
+
+Feel free to contact me if you think there's something that I can do.
