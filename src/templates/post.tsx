@@ -24,6 +24,7 @@ const BlogPostTemplate: FC<Props> = ({ data, pageContext, location }) => {
       <article>
         <header>
           <h1>{post.frontmatter.title}</h1>
+          <p>{post.frontmatter.description || node.excerpt}</p>
           <div className="meta">
             <Clock />
             <small>{post.frontmatter.date}</small>

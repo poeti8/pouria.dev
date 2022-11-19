@@ -476,6 +476,16 @@ article header h3 a:hover {
   text-shadow: 1px 4px 3px rgba(84, 249, 255, 0.5);
 }
 
+article header h1 {
+  margin-bottom: 0.8rem;
+}
+
+article header p {
+  margin: 0;
+  color: #888;
+  font-size: 16px;
+}
+
 article.list {
   margin-bottom: 32px;
 }
@@ -484,6 +494,10 @@ article.list {
   display: flex;
   align-items: center;
   margin: 8px 0 16px;
+}
+
+h1 ~ .meta {
+  margin-top: 16px;
 }
 
 .meta small {
