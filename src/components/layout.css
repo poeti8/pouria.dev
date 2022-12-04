@@ -18,6 +18,13 @@ body {
   background: radial-gradient(circle at center, #bcdeff 10%, #e5cbff 100%);
 }
 
+::selection {
+  background: #ffe1fe;
+}
+::-moz-selection {
+  background: #ffe1fe;
+}
+
 html.eraser * {
   cursor: url("/cursor-eraser.png"), auto !important;
 }
