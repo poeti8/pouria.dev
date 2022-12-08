@@ -14,12 +14,17 @@ interface Props {
 const BlogPostTemplate: FC<Props> = ({ data, pageContext, location }) => {
   const post = data.markdownRemark;
   const { previous, next } = pageContext;
+  const ogImagePath = pageContext.slug.replace(/\//g, "");
 
   return (
     <Layout location={location}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        ogType="article"
+        twitterCard="summary_large_image"
+        ogImage={`/og/${ogImagePath}.png`}
+        twitterImage={`/og/${ogImagePath}.png`}
       />
       <article>
         <header>

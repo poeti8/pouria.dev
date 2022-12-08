@@ -34,7 +34,9 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "rellax": "^1.12.1",
+    "satori": "^0.0.44",
     "shuffle-array": "^1.0.1",
+    "svg2img": "1.0.0-beta.2",
     "typeface-merriweather": "1.1.13",
     "typeface-montserrat": "1.1.13"
   },
@@ -49,7 +51,6 @@
   "homepage": "https://github.com/poeti8/pouria.dev",
   "keywords": [],
   "license": "MIT",
-  "main": "n/a",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/poeti8/pouria.dev.git"

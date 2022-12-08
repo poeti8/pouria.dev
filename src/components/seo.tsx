@@ -7,9 +7,22 @@ interface Props {
   lang?: string;
   meta?: Array<Record<string, any>>;
   title: string;
+  ogType?: string;
+  twitterCard?: string;
+  ogImage?: string;
+  twitterImage?: string;
 }
 
-const SEO: FC<Props> = ({ description, lang, meta, title }) => {
+const SEO: FC<Props> = ({
+  description,
+  lang,
+  meta,
+  title,
+  ogType,
+  twitterCard,
+  ogImage,
+  twitterImage,
+}) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -47,15 +60,11 @@ const SEO: FC<Props> = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:type`,
-          content: `website`,
+          content: ogType ?? `website`,
         },
         {
           name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
+          content: twitterCard ?? `summary`,
         },
         {
           name: `twitter:title`,
@@ -67,11 +76,11 @@ const SEO: FC<Props> = ({ description, lang, meta, title }) => {
         },
         {
           name: `og:image`,
-          content: "/share.png",
+          content: ogImage ?? "/share.png",
         },
         {
           name: `twitter:image`,
-          content: "/share.png",
+          content: twitterImage ?? "/share.png",
         },
         ...meta,
       ]}
