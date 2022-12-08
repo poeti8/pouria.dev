@@ -40,9 +40,9 @@ const OG = (props?) => {
       >
         <img
           src={`data:image/png;base64,${props.davidBustBubbleGumImage}`}
-          width={62}
-          height={62}
-          style={{ margin: "-28px 0 40px 0" }}
+          width={68}
+          height={68}
+          style={{ margin: "-32px 0 40px 0" }}
         />
         <h1
           style={{
@@ -51,7 +51,7 @@ const OG = (props?) => {
             letterSpacing: "0.03em",
             fontWeight: 700,
             textShadow: "2px 3px 3px rgba(84, 249, 255, 0.6)",
-            fontSize: 62,
+            fontSize: 68,
             margin: "-18px 0 0 0",
             padding: 0,
           }}
@@ -62,7 +62,7 @@ const OG = (props?) => {
           style={{
             fontFamily: "Public Sans",
             color: "#005675",
-            fontSize: 19,
+            fontSize: 21,
             margin: "16px 0 0 0",
             padding: 0,
           }}
