@@ -223,6 +223,12 @@ nav ul {
   list-style: none;
 }
 
+
+article ~ nav ul {
+  width: 100%;
+  justify-content: space-between;
+}
+
 nav li {
   margin-right: 16px;
 }
