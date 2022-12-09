@@ -11,16 +11,24 @@ interface Props {
   location: any;
 }
 
-const BlogPostTemplate: FC<Props> = ({ data, pageContext, location }) => {
+const BlogPostTemplate: FC<Props> = ({
+  data,
+  pageContext,
+  location,
+  path,
+  ...rest
+}) => {
   const post = data.markdownRemark;
   const { previous, next } = pageContext;
   const ogImagePath = pageContext.slug.replace(/\//g, "");
+  const { title, description, date, hackernewsId } = post.frontmatter;
+  const postUrl = data.site.siteMetadata.siteUrl + path;
 
   return (
     <Layout location={location}>
       <SEO
-        title={post.frontmatter.title}
-        description={post.frontmatter.description || post.excerpt}
+        title={title}
+        description={description || post.excerpt}
         ogType="article"
         twitterCard="summary_large_image"
         ogImage={`/og/${ogImagePath}.png`}
@@ -28,15 +36,43 @@ const BlogPostTemplate: FC<Props> = ({ data, pageContext, location }) => {
       />
       <article>
         <header>
-          <h1>{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.description || node.excerpt}</p>
+          <h1>{title}</h1>
+          <p>{description || node.excerpt}</p>
           <div className="meta">
             <Clock />
-            <small>{post.frontmatter.date}</small>
+            <small>{date}</small>
           </div>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
       </article>
+
+      <hr />
+
+      <small className="share">
+        share on the{" "}
+        <a
+          href={`https://twitter.com/intent/tweet/?text=${title}. ${description}&url=${postUrl}`}
+          className="twitter"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          blue bird app ↗
+        </a>
+        {hackernewsId ? (
+          <>
+            <span>·</span>discuss on the{" "}
+            <a
+              href={`https://news.ycombinator.com/item?id=${hackernewsId}`}
+              className="hackernews"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              orange website ↗
+            </a>
+          </>
+        ) : null}
+        .
+      </small>
 
       <nav>
         <ul>
@@ -64,6 +100,11 @@ export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
@@ -72,6 +113,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        hackernewsId
       }
     }
   }

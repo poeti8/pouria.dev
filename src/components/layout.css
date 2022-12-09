@@ -571,6 +571,36 @@ article ul li::before {
   background-color: #666;
 }
 
+hr {
+  height: 1px;
+  width: 100%;
+  border-bottom: 1px dotted #888;
+  background-color: transparent;
+  color: transparent;
+  margin-top: 36px;
+}
+
+.share {
+  color: #888; 
+  margin-top: 16px;
+}
+
+.share .twitter {
+  color: #1c9cea;
+  border-bottom: 1px dotted #1c9cea;
+  opacity: 0.8;
+}
+
+.share .hackernews {
+  color: #ff6600;
+  border-bottom: 1px dotted #ff6600;
+  opacity: 0.8;
+}
+
+.share span {
+  padding: 0 6px;
+}
+
 @media only screen and (max-width: 480px) {
   html,
   body {

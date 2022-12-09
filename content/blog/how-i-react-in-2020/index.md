@@ -2,6 +2,7 @@
 title: How I React in 2020
 date: "2020-02-03T15:26:39.882Z"
 description: "Redux I love you, but you're bringing me down."
+hackernewsId: 22239111
 ---
 
 I've been working with React for the past 3 years or so, and after experimenting with various patterns and tools, I think I've found my favorite way of doing things. Things that make me go to bed without thinking, "why haven't I thrown my laptop off a cliff?".
