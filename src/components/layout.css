@@ -580,7 +580,9 @@ article ul li::before {
 hr {
   height: 1px;
   width: 100%;
-  border-bottom: 1px dotted #888;
+  border-width: 1px;
+  border-style: dotted;
+  border-color: rgb(180, 180, 180);
   background-color: transparent;
   color: transparent;
   margin-top: 36px;
