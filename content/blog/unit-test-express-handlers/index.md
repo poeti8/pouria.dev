@@ -1,9 +1,9 @@
 ---
-title: Unit test Express handlers
+title: Unit test Express.js handlers
 date: "2020-05-23T15:26:39.882Z"
 description: "Epicly."
 ---
-When I wanted to start testing my Express app I had so many questions; do I need an Express app? What should I test? What should I mock? Should I mock the database too? Why did my father leave me when I was 4?
+When I wanted to start testing my Express.js app I had so many questions; do I need an Express.js app? What should I test? What should I mock? Should I mock the database too? Why did my father leave me when I was 4?
 
 There might not be a "correct" answer to the questions above, but I've found an approach that not only works but is also something that I find easy to wrap my head around.
 
@@ -34,7 +34,7 @@ Here's a dead simple handler that simply responds with `pong` to any request:
 const ping = (req, res) => res.status(200).send("pong");
 ```
 
-What does this function need to run independently? The answer is a `req` object and a `res` object. So if we manage to implement our own request and response object we should be able to run the handler and inspect the result **without** an Express server.
+What does this function need to run independently? The answer is a `req` object and a `res` object. So if we manage to implement our own request and response object we should be able to run the handler and inspect the result **without** an Express.js server.
 
 ```javascript
 /* handlers.test.js */
@@ -71,7 +71,7 @@ describe("ping", () => {
 
 The above test works, but it seems a bit hacky. What if we wanted to use another response method or wanted to access something from request? It'd be too much to try to mock everything by ourselves, so maybe there's somebody out there that has already done it for us? Well, yes! 
 
-We can use [jest-express](https://github.com/jameswlane/jest-express), it's a helpful library that replicates the functionality of an Express server using Jest mock functions which would let us to test the behavior of our mocked functions using **built-in** Jest methods.
+We can use [jest-express](https://github.com/jameswlane/jest-express), it's a helpful library that replicates the functionality of an Express.js server using Jest mock functions which would let us to test the behavior of our mocked functions using **built-in** Jest methods.
 
 Another improvement we can go for is to use Jest's `beforeEach()` method to prepare our mocks before starting each test and avoid repeating ourselves by writing them every time.
 
@@ -121,7 +121,7 @@ const getPrice = async (req, res) => {
 
 Our handler is responsible to **directly** call a third-party service to get data, which is not good. How we get data is implementation details and the handler should be totally ignorant about it. 
 
-We can create a function called `getPrice()` to call the API so now our handler needs to import the function as a dependency in order to use it and we would need to use Jest to mock the dependency. However, in the context of Express we can assign our custom functions to the **request object** so that function can be used across middleware functions.
+We can create a function called `getPrice()` to call the API so now our handler needs to import the function as a dependency in order to use it and we would need to use Jest to mock the dependency. However, in the context of Express.js we can assign our custom functions to the **request object** so that function can be used across middleware functions.
 
 By creating clients for external services and attaching them to the request object, we **avoid importing dependencies** into our handler and also it makes it a bit easier to mock our external calls.
 
