@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
@@ -23,6 +23,19 @@ const BlogPostTemplate: FC<Props> = ({
   const ogImagePath = pageContext.slug.replace(/\//g, "");
   const { title, description, date, hackernewsId } = post.frontmatter;
   const postUrl = data.site.siteMetadata.siteUrl + path;
+
+  useEffect(() => {
+    const body = document?.querySelector("body");
+    if (body) {
+      body.classList.add("article");
+    }
+
+    return () => {
+      if (body) {
+        body.classList.remove("article");
+      }
+    };
+  }, []);
 
   return (
     <Layout location={location}>
