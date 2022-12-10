@@ -18,6 +18,10 @@ body {
   background: radial-gradient(circle at center, #bcdeff 10%, #e5cbff 100%);
 }
 
+body.article {
+  background: radial-gradient(circle at center, #bcdeff 25%, #e5cbff 100%);
+}
+
 ::selection {
   background: #ffe1fe;
 }
@@ -648,5 +652,9 @@ hr {
 
   main {
     padding: 24px;
+  }
+
+  footer#main-footer .eye-emoji {
+    opacity: 1;
   }
 }
