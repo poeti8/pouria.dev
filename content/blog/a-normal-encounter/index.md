@@ -12,7 +12,10 @@ Now, I was caught off guard. When I was getting near the bathroom I had one obje
 
 As a consequence, I responded with a rushed “hi” immediately right before I finally recognize him. He’s the one working in the cafe. He’s one of the barista guys. He’s the one making my coffee. But at this point I was already walking and I had passed him a few inches where it would position him right behind me and it was too late to make further interactions. Here’s a quick diagram to help you visualize the situation:
 
-![the diagram](diagram.png "the diagram")
+<figure>
+    <img src="diagram.png" alt="the diagram">
+    <figcaption>the diagram</figcaption>
+</figure>
 
 As soon as I went inside the stall and started unzipping my pants, and as he was washing his hands, a thought appeared in my head out of nowhere. Is he thinking about me right now? Is he thinking to himself that this guy is going to lose liquids right now so I bet that he’s going to come here and order some coffee or water from us? 
 
