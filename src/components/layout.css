@@ -46,6 +46,10 @@ pre {
   font-size: 14px;
 }
 
+figure {
+  margin: 0 auto;
+}
+
 :not(pre) > code[class*="language-"] {
   padding: 0.1em;
   border-radius: 2px;
