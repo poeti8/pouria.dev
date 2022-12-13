@@ -50,6 +50,7 @@ pre {
   padding: 0.1em;
   border-radius: 2px;
   background-color: hsl(210, 100%, 94%);
+  font-size: 0.95rem;
 }
 
 .you-did-it {
