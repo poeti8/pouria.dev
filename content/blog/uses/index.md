@@ -76,7 +76,7 @@ I've disabled the status bar, the activity bar, the minimap, breadcrumbs and bas
 - 💘 [Soulseek](http://www.slsknet.org), peer-to-peer file sharing network.
 - [Spark](https://sparkmailapp.com/), email client.
 - 💰 [Spotify](https://www.spotify.com/), for both streaming or listening to local music. [Follow me](https://open.spotify.com/user/poeti8) for epic playlists.
-- 💘 [Telegram](https://telegram.org), more than a messenger, better than a social media.
+- 💰 💘 [Telegram](https://telegram.org), more than a messenger, richer than a social media.
 - 💰 [WorkingHours](https://workinghoursapp.com/), track tasks and activities.
 
 ### Devices.
