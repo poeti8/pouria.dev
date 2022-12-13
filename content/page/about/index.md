@@ -4,31 +4,23 @@ date: "2019-11-30T10:35:49.363Z"
 description: "Get to know more about me."
 ---
 
-![me](me.png)
+![me](me.jpg)
 
 Hello there!
 
-I'm **Pouria**, a web developer based on Tehran. Been interested in design and web development since young age and while started with simple Photoshop, HTML/CSS and jQuery, these days I mostly work with:
+I'm unemployed, sorry I mean I'm **POURIA 🦋**. Currently based in Tehran. 
 
-- React (with Redux, Next.js)
-- Node.js (with Express.js)
-- TypeScript
-- MongoDB (with Mongoose)
-- PostgreSQL (with Knex.js)
+I use web technologies such as TypeScript, React and Node.js to create things I find useful and interesting. Right now I'm fascinated by WebGL, Three.js, 3D graphics, math and generative art and music and I'm shifting my focus there.
 
-#### The Devs
+I run a programming community called [The Devs](https://thedevs.network). I've created it in 2016, it's a network of groups on Telegram where everyone can chat, discuss and be in touch with their fellow coders. It has now more than 20 specialized groups and more than 33000 members on the main channel. 
 
-Created [The Devs](https://thedevs.network) network in 2016, a programming community on Telegram to chat, learn and have fun, It now has +20 programming groups and +20K members on the main channel.
+I do some open source work too when I have free time:
 
-#### Works
-
-I like to do open source projects when I'm free:
-
-- [Kutt](https://kutt.it): Modern URL shortener
+- [Kutt](https://kutt.it): a "modern" URL shortener.
 - [Telegram Directory](https://tgdr.io): Telegram directory to discover channels, bots and groups.
 - [The Guard Bot](https://github.com/thedevs-network/the-guard-bot): A Telegram bot to moderate groups.
-- ...More on [my GitHub](https://github.com/poeti8)
 
-#### Contact
+Check out my [my GitHub](https://github.com/poeti8) for more.
 
-Want to say hi? Contact me via [hi@pouria.dev](mailto:hi@pouria.dev) or <a href="https://t.me/poeti8" target="_blank" rel="noopener noreferrer">Telegram</a>.
+
+Want to say hi? Contact me via email [hi@pouria.dev](mailto:hi@pouria.dev) or Telegram <a href="https://t.me/poeti8" target="_blank" rel="noopener noreferrer">@poeti8</a>.
