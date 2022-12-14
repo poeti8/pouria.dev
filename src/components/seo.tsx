@@ -31,6 +31,7 @@ const SEO: FC<Props> = ({
             title
             description
             author
+            siteUrl
           }
         }
       }
@@ -38,6 +39,7 @@ const SEO: FC<Props> = ({
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const { siteUrl } = site.siteMetadata;
 
   return (
     <Helmet
@@ -76,11 +78,11 @@ const SEO: FC<Props> = ({
         },
         {
           name: `og:image`,
-          content: ogImage ?? "/share.png",
+          content: siteUrl + (ogImage ?? "/share.png"),
         },
         {
           name: `twitter:image`,
-          content: twitterImage ?? "/share.png",
+          content: siteUrl + (twitterImage ?? "/share.png"),
         },
         ...meta,
       ]}
