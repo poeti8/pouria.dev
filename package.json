@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "cursor-effects": "^1.0.6",
-    "gatsby": "^4.22.0",
+    "gatsby": "^4.25.4",
     "gatsby-image": "^2.2.31",
     "gatsby-plugin-feed": "^4.22.0",
     "gatsby-plugin-google-analytics": "^4.22.0",
