@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "/unknown-pleasures/*"
+  to = "https://capable-unicorn-89bdb8.netlify.app/:splat"
+  status = 200
+  force = true
