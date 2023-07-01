@@ -232,7 +232,6 @@ nav ul {
   list-style: none;
 }
 
-
 article ~ nav ul {
   width: 100%;
   justify-content: space-between;
@@ -359,7 +358,6 @@ nav li a.active {
 .animation .name {
   animation: flick 1.8s ease-out;
 }
-
 .name:hover {
   transform: translateY(-2px) scale(1.02, 1.02);
   text-shadow: 2px 7px 4px rgba(84, 249, 255, 1);
@@ -491,10 +489,25 @@ footer#main-footer p {
   padding: 0;
 }
 
+@keyframes eye-scale {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
 footer#main-footer .eye-emoji {
   margin: 0px;
   font-size: 18px;
   opacity: 0;
+  animation: 0.8s linear infinite eye-scale;
 }
 
 footer#main-footer .footer-nav-container:hover .eye-emoji {
@@ -533,7 +546,6 @@ article img {
   margin-right: auto;
   margin-left: auto;
 }
-
 
 article blockquote {
   font-style: italic;
@@ -653,7 +665,7 @@ hr {
 }
 
 .share {
-  color: #888; 
+  color: #888;
   margin-top: 16px;
 }
 
