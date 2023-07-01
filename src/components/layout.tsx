@@ -31,7 +31,7 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
       query {
         site {
           siteMetadata {
-            title
+            siteTitle
             description
             quotes
             japaneseWords
@@ -48,7 +48,7 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
     `
   );
 
-  const { title, description, social, quotes, japaneseWords } =
+  const { siteTitle, description, social, quotes, japaneseWords } =
     data.site.siteMetadata;
 
   useEffect(() => {

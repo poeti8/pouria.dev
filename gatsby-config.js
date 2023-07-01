@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `POURIA`,
+    title: `POURIA 🦋`,
+    siteTitle: `POURIA`,
     author: `Pouria Ezzati`,
     description: `Thoughts that keep me awake at night.`,
     siteUrl: `https://pouria.dev`,
