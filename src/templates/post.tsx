@@ -62,18 +62,9 @@ const BlogPostTemplate: FC<Props> = ({
       <hr />
 
       <small className="share">
-        share on the{" "}
-        <a
-          href={`https://twitter.com/intent/tweet/?text=${title}. ${description}&url=${postUrl}`}
-          className="twitter"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          blue bird app ↗
-        </a>
         {hackernewsId ? (
           <>
-            <span>·</span>discuss on the{" "}
+            discuss on the{" "}
             <a
               href={`https://news.ycombinator.com/item?id=${hackernewsId}`}
               className="hackernews"
