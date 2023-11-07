@@ -2,6 +2,7 @@
 title: Imagine if no X
 date: "2023-11-07T20:00:53.041Z"
 description: "And maybe we'll be free."
+hackernewsId: 38182173
 ---
 **Imagine if no X**, and every person you meet has an interesting fresh personal story to tell that you haven’t already read on the internet. You won’t find out what happened to your friend by reading a tweet, they tell you in person. Instead of leaving a reaction by tapping on a screen, you have an individualized face-to-face expression. You have a momentum and a conversation.
 
