@@ -61,8 +61,8 @@ const BlogPostTemplate: FC<Props> = ({
 
       <hr />
 
-      <small className="share">
-        {hackernewsId ? (
+      {hackernewsId ? (
+        <small className="share">
           <>
             discuss on the{" "}
             <a
@@ -74,9 +74,8 @@ const BlogPostTemplate: FC<Props> = ({
               orange website ↗
             </a>
           </>
-        ) : null}
-        .
-      </small>
+        </small>
+      ) : null}
 
       <nav>
         <ul>
