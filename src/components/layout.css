@@ -364,56 +364,6 @@ nav li a.active {
   cursor: url("/cursor-sculpture.png"), auto;
 }
 
-@keyframes dolphin-spin {
-  from {
-    transform: rotate3d(0, 1, 0, 0);
-  }
-
-  to {
-    transform: rotate3d(0, 1, 0, 360deg);
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-.dolphin {
-  font-size: 24px;
-}
-
-.dolphin-left {
-  margin-right: 18px;
-}
-
-.dolphin-right {
-  margin-left: 15px;
-}
-
-.animation .dolphin-left {
-  animation: 2s ease-out fade-in, 1.5s linear infinite dolphin-spin,
-    1.8s ease-out 0.5s flick;
-}
-
-.animation .dolphin-right {
-  animation: 2s ease-out fade-in, 1.5s linear infinite dolphin-spin,
-    1.8s ease-out 0.5s flick;
-}
-
-.dolphin-left {
-  animation: 1.5s linear infinite dolphin-spin;
-}
-
-.dolphin-right {
-  animation: 1.5s linear infinite dolphin-spin;
-}
-
 .short-bio {
   position: relative;
   max-width: 100%;

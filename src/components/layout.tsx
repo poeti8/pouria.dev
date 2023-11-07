@@ -92,14 +92,12 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
           data-rellax-zindex="0"
         >
           <div className="name-container">
-            <span className="dolphin dolphin-left">🐬</span>
             <Link to="/">
               <h1 className="name">
                 {siteTitle}{" "}
                 <span className="jp">{shuffle(japaneseWords)[0]}</span>.
               </h1>
             </Link>
-            <span className="dolphin dolphin-right">🐬</span>
           </div>
           <p className="short-bio">{description}</p>
           <nav>
