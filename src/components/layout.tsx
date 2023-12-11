@@ -137,15 +137,6 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
                 </li>
                 <li>
                   <a
-                    href={`https://open.spotify.com/user/${social.spotify}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    spotify
-                  </a>
-                </li>
-                <li>
-                  <a
                     href={`https://t.me/${social.telegram}`}
                     target="_blank"
                     rel="noopener noreferrer"
