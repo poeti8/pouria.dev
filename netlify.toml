@@ -3,3 +3,9 @@
   to = "https://capable-unicorn-89bdb8.netlify.app/:splat"
   status = 200
   force = true
+
+[[redirects]]
+  from = "/one-million-particles/*"
+  to = "https://chimerical-mochi-52bc02.netlify.app/:splat"
+  status = 200
+  force = true
