@@ -69,7 +69,7 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
       window.addEventListener("click", eraserEvent);
       document.documentElement.classList.add("eraser");
     });
-  });
+  }, [konamiInit, konamiActive]);
 
   return (
     <>
@@ -106,6 +106,7 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
                 ["/", "blog"],
                 ["/about/", "about"],
                 ["/uses/", "uses"],
+                ["/photography/", "photography"],
               ].map(([path, name]) => (
                 <li key={name}>
                   <Link

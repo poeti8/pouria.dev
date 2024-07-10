@@ -24,6 +24,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const pageTemplate = path.resolve(`./src/templates/page.tsx`);
   const postTemplate = path.resolve(`./src/templates/post.tsx`);
+  const photographyTemplate = path.resolve(`./src/templates/photography.tsx`);
 
   const result = await graphql(
     `
@@ -125,6 +126,13 @@ exports.createPages = async ({ graphql, actions }) => {
         slug: post.node.fields.slug,
       },
     });
+  });
+  createPage({
+    path: "/photography",
+    component: photographyTemplate,
+    context: {
+      slug: "/photography",
+    },
   });
 };
 

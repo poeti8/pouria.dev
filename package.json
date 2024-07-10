@@ -9,7 +9,7 @@
   "dependencies": {
     "cursor-effects": "^1.0.6",
     "gatsby": "^4.22.0",
-    "gatsby-image": "^2.2.31",
+    "gatsby-image": "^2.11.0",
     "gatsby-plugin-feed": "^4.22.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^4.22.0",
@@ -32,6 +32,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-photo-album": "^2.4.1",
+    "react-photo-view": "^1.2.6",
     "rellax": "^1.12.1",
     "satori": "^0.0.44",
     "shuffle-array": "^1.0.1",

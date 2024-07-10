@@ -22,6 +22,11 @@ body.article {
   background: radial-gradient(circle at center, #bcdeff 25%, #e5cbff 100%);
 }
 
+body.dark {
+  color: #e7e7e7;
+  background: radial-gradient(circle at center, #151617 10%, #1c1a1d 100%);
+}
+
 ::selection {
   background: #ffe1fe;
 }
@@ -124,7 +129,7 @@ h6 {
 
 h1 {
   margin-top: 0;
-  font-size: 2.288em;
+  font-size: 2.188em;
 }
 
 h2 {
@@ -174,12 +179,32 @@ small {
   transition: background-size 0.3s ease-out;
 }
 
+body.dark #grid {
+  background-image: linear-gradient(
+      0deg,
+      transparent 49%,
+      rgba(100, 100, 100, 0.14) 50%,
+      rgba(100, 100, 100, 0.14) 51%,
+      transparent 52%,
+      transparent
+    ),
+    linear-gradient(
+      90deg,
+      transparent 49%,
+      rgba(100, 100, 100, 0.14) 50%,
+      rgba(100, 100, 100, 0.14) 51%,
+      transparent 52%,
+      transparent
+    );
+}
+
 #container {
   position: relative;
-  width: 700px;
+  width: 100%;
   max-width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #___gatsby {
@@ -188,6 +213,7 @@ small {
 
 main {
   position: relative;
+  width: 700px;
   max-width: 100%;
   height: auto;
   display: flex;
@@ -198,6 +224,11 @@ main {
   box-shadow: 0px 2px 5px 0px rgba(80, 80, 80, 0.1);
 }
 
+body.dark main {
+  width: 900px;
+  background-color: black;
+}
+
 figcaption {
   margin-top: 8px;
   text-align: center;
@@ -206,6 +237,8 @@ figcaption {
 }
 
 header.main {
+  width: 700px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -256,6 +289,17 @@ nav li a.active {
   border-bottom: none;
   cursor: default;
 }
+
+body.dark nav li a {
+  color: rgb(240, 240, 240);
+  border-bottom: 1px dotted rgb(150, 150, 150);
+}
+
+body.dark nav li a.active {
+  color: rgb(150, 150, 150);
+  border-bottom: none;
+}
+
 
 @keyframes flick {
   0% {
@@ -355,6 +399,11 @@ nav li a.active {
   transition: all 0.2s ease-in;
 }
 
+body.dark .name {
+  color: rgb(240, 240, 240);
+  text-shadow: 2px 3px 3px rgba(150, 150, 150, 0.6);
+}
+
 .animation .name {
   animation: flick 1.8s ease-out;
 }
@@ -364,6 +413,10 @@ nav li a.active {
   cursor: url("/cursor-sculpture.png"), auto;
 }
 
+body.dark .name:hover {
+  text-shadow: 2px 7px 4px rgba(150, 150, 150, 1);
+}
+
 .short-bio {
   position: relative;
   max-width: 100%;
@@ -371,6 +424,10 @@ nav li a.active {
   margin: 0;
   color: #005675;
   font-size: 15px;
+}
+
+body.dark .short-bio {
+  color: rgb(200, 200, 200);
 }
 
 .animation .short-bio {
@@ -419,6 +476,10 @@ footer#main-footer {
   padding: 0;
   color: #005675;
   font-size: 16px;
+}
+
+body.dark footer#main-footer {
+  color: rgb(200, 200, 200);
 }
 
 footer#main-footer .footer-nav-container {
@@ -489,6 +550,11 @@ article a {
   font-size: 1rem;
   color: rgb(250, 103, 255);
   border-bottom: 1px dotted rgb(250, 103, 255);
+}
+
+body.dark article a {
+  color: rgb(240, 240, 240);
+  border-bottom: 1px dotted rgb(150, 150, 150);
 }
 
 article img {
@@ -612,6 +678,10 @@ hr {
   background-color: transparent;
   color: transparent;
   margin-top: 36px;
+}
+
+.react-photo-album--photo {
+  cursor: zoom-in;
 }
 
 .share {
