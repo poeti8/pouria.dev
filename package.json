@@ -9,7 +9,7 @@
   "dependencies": {
     "cursor-effects": "^1.0.6",
     "gatsby": "^4.22.0",
-    "gatsby-image": "^2.11.0",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-feed": "^4.22.0",
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-manifest": "^4.22.0",

@@ -23,9 +23,10 @@ const PageTemplate: FC<Props> = ({ data, location }) => {
   }, []);
 
   const photos = data.allFile.edges.map(({ base, node }) => {
+    const fluid = node.childImageSharp.fluid;
     const order = parseFloat(node.base.replace(".jpg", ""));
-    const width = parseInt(node.childImageSharp.fluid.sizes.split(" ").reverse()[0].replace("px", ""));
-    const height = width / node.childImageSharp.fluid.aspectRatio;
+    const width = parseInt(fluid.sizes.split(" ").reverse()[0].replace("px", ""));
+    const height = width / fluid.aspectRatio;
     const src = node.childImageSharp.fluid.src;
     const srcSet = node.childImageSharp.fluid.srcSet.split("\n").map(set => {
       const width = parseInt(set.split(" ").reverse()[0].replace("w", ""));
@@ -40,7 +41,8 @@ const PageTemplate: FC<Props> = ({ data, location }) => {
       height,
       src,
       srcSet,
-      order
+      order,
+      fluid,
     }
   }).sort((a, b) => a.order > b.order ? 1 : -1);
 
@@ -64,11 +66,13 @@ const PageTemplate: FC<Props> = ({ data, location }) => {
               return 3;
             }}
             photos={photos}
-            renderPhoto={({ photo, wrapperStyle, renderDefaultPhoto, layout }) => {
+            renderPhoto={({ photo, wrapperStyle, imageProps, layout }) => {
               return (
                 <div style={{ position: "relative", ...wrapperStyle }}>
-                  <PhotoView className="photograph" index={layout.index} src={photo.src}>
-                   {renderDefaultPhoto({ wrapped: true })}
+                  <PhotoView index={layout.index} src={photo.src}>
+                    <div className="photograph">
+                      <Img fluid={photo.fluid} />
+                    </div>
                   </PhotoView>
                 </div>
               )
