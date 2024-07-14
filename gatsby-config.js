@@ -175,7 +175,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Odibee Sans`, `Public Sans\:300,700,`],
+        fonts: [`Odibee Sans`, `Public Sans\:300,700,`, `Italianno`],
         display: "swap",
       },
     },

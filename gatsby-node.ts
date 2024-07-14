@@ -25,6 +25,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const pageTemplate = path.resolve(`./src/templates/page.tsx`);
   const postTemplate = path.resolve(`./src/templates/post.tsx`);
   const photographyTemplate = path.resolve(`./src/templates/photography.tsx`);
+  const contactTemplate = path.resolve(`./src/templates/contact.tsx`);
 
   const result = await graphql(
     `
@@ -132,6 +133,13 @@ exports.createPages = async ({ graphql, actions }) => {
     component: photographyTemplate,
     context: {
       slug: "/photography",
+    },
+  });
+  createPage({
+    path: "/contact",
+    component: contactTemplate,
+    context: {
+      slug: "/contact",
     },
   });
 };

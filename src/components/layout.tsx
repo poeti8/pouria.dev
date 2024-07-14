@@ -92,7 +92,7 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
           data-rellax-zindex="0"
         >
           <div className="name-container">
-            <Link to="/">
+            <Link to={location.pathname}>
               <h1 className="name">
                 {siteTitle}{" "}
                 <span className="jp">{shuffle(japaneseWords)[0]}</span>.
@@ -107,6 +107,7 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
                 ["/about/", "about"],
                 ["/uses/", "uses"],
                 ["/photography/", "photography"],
+                ["/contact/", "contact"],
               ].map(([path, name]) => (
                 <li key={name}>
                   <Link
