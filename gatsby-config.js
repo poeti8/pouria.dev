@@ -33,9 +33,10 @@ module.exports = {
       "My favorite hobby is spending days to create Spotify playlists and never listen to them again.",
       "I got a total of 0 matches on Tinder.",
       "I could have published this website at least 2 weeks earlier if I hadn't used TypeScript.",
-      "I care so much about my website being responsive. [my nose just growed longer by 1 inch]",
+      "I care so much about my website being responsive, I just hope you're not visiting from mobile.",
       "This website is not tested, proceed with caution !!1!",
       "Try ↑ ↑ ↓ ↓ ← → ← → B A.",
+      "You made the visit number NaN (counting since 16 July 2024.)",
     ],
   },
   plugins: [

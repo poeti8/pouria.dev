@@ -1,9 +1,12 @@
-import React, { FC, useEffect } from "react";
+import React, { FC, useEffect, useContext } from "react";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Clock from "../../content/assets/clock-icon.svg";
+import Eye from "../../content/assets/eye-icon.svg";
+
+import { VisitsContext } from "../components/root";
 
 interface Props {
   data: any;
@@ -18,6 +21,7 @@ const BlogPostTemplate: FC<Props> = ({
   path,
   ...rest
 }) => {
+  const visits = useContext(VisitsContext);
   const post = data.markdownRemark;
   const { previous, next } = pageContext;
   const ogImagePath = pageContext.slug.replace(/\//g, "");
@@ -37,6 +41,8 @@ const BlogPostTemplate: FC<Props> = ({
     };
   }, []);
 
+  const count = visits?.find(v => v.path === path.replace(/\/$/, ""))?.count ?? 0;
+
   return (
     <Layout location={location}>
       <SEO
@@ -52,6 +58,12 @@ const BlogPostTemplate: FC<Props> = ({
           <h1>{title}</h1>
           <p>{description || node.excerpt}</p>
           <div className="meta">
+            {visits?.length ? (
+              <>
+                <Eye />
+                <small style={{ marginRight: "0.5rem" }}>{count}</small>
+              </>
+            ) : null}
             <Clock />
             <small>{date}</small>
           </div>

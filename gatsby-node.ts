@@ -129,17 +129,17 @@ exports.createPages = async ({ graphql, actions }) => {
     });
   });
   createPage({
-    path: "/photography",
+    path: "/photography/",
     component: photographyTemplate,
     context: {
-      slug: "/photography",
+      slug: "/photography/",
     },
   });
   createPage({
-    path: "/contact",
+    path: "/contact/",
     component: contactTemplate,
     context: {
-      slug: "/contact",
+      slug: "/contact/",
     },
   });
 };

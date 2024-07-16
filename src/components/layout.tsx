@@ -6,7 +6,7 @@ import konami from "konami";
 import "modern-normalize/modern-normalize.css";
 
 import "./layout.css";
-import { AnimationContext } from "./root";
+import { AnimationContext, VisitsContext } from "./root";
 
 function eraserEvent(event) {
   event.preventDefault();
@@ -25,6 +25,7 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
   const [rellaxInit, setRellaxInit] = useState(false);
   const [konamiInit, setKonamiInit] = useState(false);
   const [konamiActive, setKonamiActive] = useState(false);
+  const visits = useContext(VisitsContext);
   const animation = useContext(AnimationContext);
   const data = useStaticQuery(
     graphql`
@@ -158,9 +159,18 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
             </nav>
           </div>
           <marquee className="quotes" direction="left">
-            {shuffle(quotes).map((text, index) => (
-              <span key={`quote-${index}`}>{text}</span>
-            ))}
+            {shuffle(quotes).map((text, index) => {
+              let quote = text;
+              if (quote.includes("NaN")) {
+                const visitsCount = visits?.find(v => v.path === "_landing")?.count;
+                if (visitsCount) {
+                  quote = quote.replace("NaN", visitsCount);
+                }
+              }
+              return (
+                <span key={`quote-${index}`}>{quote}</span>
+              )
+            })}
           </marquee>
           <p className="copyright">
             © {new Date().getFullYear()}, built with sad lo-fi hip-hop noises.
