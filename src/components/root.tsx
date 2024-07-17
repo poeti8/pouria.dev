@@ -1,6 +1,6 @@
 import React, { FC, createContext, useState, useEffect, useRef } from "react";
 
-import { getCookies } from "../utils";
+import { getCookies, SERVER_URL } from "../utils";
 
 export const AnimationContext = createContext(true);
 export const ContactAnimationContext = createContext(true);
@@ -24,7 +24,7 @@ const Root: FC<{ path: string }> = ({ children, path }) => {
   useEffect(() => {
     const cookies = getCookies();
     if (cookies.trackvisits === "no") return;
-    fetch("https://s.pouria.dev/visit", { 
+    fetch(`${SERVER_URL}/visit`, { 
       method: "POST", 
       body: JSON.stringify({ path, landing: landingRef.current }), 
       headers: {
@@ -37,7 +37,7 @@ const Root: FC<{ path: string }> = ({ children, path }) => {
   }, [path]);
 
   useEffect(() => {
-    fetch("https://s.pouria.dev/visit")
+    fetch(`${SERVER_URL}/visit`)
       .then(res => res.json())
       .then(setVisits)
       .catch(() => null);

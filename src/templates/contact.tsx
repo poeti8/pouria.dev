@@ -8,6 +8,7 @@ import 'react-photo-view/dist/react-photo-view.css';
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { AnimationContext, ContactAnimationContext, ContactSubmitAnimationContext } from "../components/root";
+import { SERVER_URL } from "../utils";
 
 interface Props {
   data: any;
@@ -106,13 +107,14 @@ const PageTemplate: FC<Props> = ({ location }) => {
       return;
     }
     try {
-      const res = await fetch("https://s.pouria.dev/contact", { 
+      const res = await fetch(`${SERVER_URL}/contact`, { 
         method: "POST", 
         body: JSON.stringify({ message, name, email }), 
         headers: {
           "Content-Type": "application/json",
         }, 
       });
+      console.log(res);
       if (res.status !== 200) {
         throw new Error();
       }
