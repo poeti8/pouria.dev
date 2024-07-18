@@ -58,7 +58,7 @@ figure {
 :not(pre) > code[class*="language-"] {
   padding: 0.1em;
   border-radius: 2px;
-  background-color: hsl(210, 100%, 94%);
+  background-color: hsl(195, 10%, 92%);
   font-size: 0.95rem;
 }
 
@@ -268,6 +268,10 @@ nav ul {
 article ~ nav ul {
   width: 100%;
   justify-content: space-between;
+}
+
+article ~ nav ul a {
+  font-size: 14px;
 }
 
 nav li {
@@ -548,13 +552,13 @@ article {
 
 article a {
   font-size: 1rem;
-  color: rgb(250, 103, 255);
-  border-bottom: 1px dotted rgb(250, 103, 255);
+  color: gray;
+  border-bottom: 1px dotted darkgray;
 }
 
 body.dark article a {
-  color: rgb(240, 240, 240);
-  border-bottom: 1px dotted rgb(150, 150, 150);
+  color: gray;
+  border-bottom: 1px dotted darkgray;
 }
 
 article img {
