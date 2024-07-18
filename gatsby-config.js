@@ -13,6 +13,7 @@ module.exports = {
       rss: `rss.xml`,
     },
     japaneseWords: [
+      "蝶",
       "波",
       "愛",
       "神",
@@ -22,11 +23,14 @@ module.exports = {
       "音",
       "草",
       "花",
+      "魂",
       "常",
       "情",
       "信",
       "慈",
       "天",
+      "心",
+      "勇"
     ],
     quotes: [
       "My eyesight got worse while building this website.",
@@ -87,6 +91,19 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: `gatsby-remark-footnotes`,
+            options: {
+              footnoteBackRefPreviousElementDisplay: "inline",
+              footnoteBackRefDisplay: "inline",
+              footnoteBackRefInnerText: "^",
+              footnoteBackRefAnchorStyle: `text-decoration: none;`,
+              footnoteBackRefInnerTextStartPosition: "front",
+              useFootnoteMarkerText: false,
+              useCustomDivider: "<hr/>"
+            }
+          },
+          `gatsby-remark-numbered-footnotes`,
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,

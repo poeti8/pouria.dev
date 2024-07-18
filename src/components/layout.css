@@ -975,6 +975,46 @@ body.contact-submit-animation .scroll.bottom {
   padding: 0 6px;
 }
 
+.about-me-image {
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  float: right;
+  margin-left: 0.8rem;
+  border-radius: 36% 64% 34% 66% / 55% 66% 34% 45%;
+  overflow: hidden;
+}
+
+.footnote-ref {
+  font-size: 12px;
+  padding-left: 4px;
+  border: none;
+  color: darkgray;
+}
+
+.footnote-ref::before {
+  content: "[";
+}
+
+.footnote-ref::after {
+  content: "]";
+}
+
+.footnote-backref {
+  border: none;
+  color: darkgray;
+}
+
+.footnotes {
+  font-size: 14px;
+}
+
+.footnotes a {
+  font-size: inherit;
+  color: gray;
+  border-color: darkgray;
+}
+
 @media only screen and (max-width: 480px) {
   html,
   body {
@@ -1101,6 +1141,18 @@ body.contact-submit-animation .scroll.bottom {
   
   footer#main-footer .eye-emoji {
     opacity: 1;
+  }
+
+  .about-me-image {
+    width: 130px;
+  }
+
+  .footnote-ref {
+    font-size: 11px;
+  }
+
+  .footnotes {
+    font-size: 13px;
   }
 }
 

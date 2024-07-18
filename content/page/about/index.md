@@ -4,23 +4,24 @@ date: "2019-11-30T10:35:49.363Z"
 description: "Get to know more about me."
 ---
 
-![me](me.jpg)
+<div class="about-me-image">
+    <img alt="me" src="me.jpg"/>
+</div>
 
 Hello there!
 
-I'm unemployed, sorry I mean I'm **POURIA 🦋**. Currently based in Tehran. 
+I'm unemployed. Sorry, I mean I'm Pouria. A man with brown eyes and a skin of lighter color, tall, with a dark short hair over his forehead, and a mustache over his smile, who's lived more than a quarter of a century, but often forgets that he has.
 
-I use web technologies such as TypeScript, React and Node.js to create things I find useful and interesting. Right now I'm fascinated by WebGL, Three.js, 3D graphics, math and generative art and music and I'm shifting my focus there.
+When I was a child and barely knew how to read and write, I used to look with wonder at these things called computer and think with childish imagination of all the things you can do with them. They showed me a way to a world much bigger that I'd known, where countless discoveries were awaiting me.
 
-I run a programming community called [The Devs](https://thedevs.network). I've created it in 2016, it's a network of groups on Telegram where everyone can chat, discuss and be in touch with their fellow coders. It has now more than 20 specialized groups and more than 33000 members on the main channel. 
+Those fascinations have never left me—although a big part of them is now occupied by books—and today I explore them by creative coding, a term that distinguishes a kind of programming that is done for expressing oneself. 
 
-I do some open source work too when I have free time:
+I share my fascinations in _A Thousand Joys_[^a1000joys]—a YouTube channel that I've created for this purpose—and in little experiments and projects that I've made now and then, which can be found on my works page.
 
-- [Kutt](https://kutt.it): a "modern" URL shortener.
-- [Telegram Directory](https://tgdr.io): Telegram directory to discover channels, bots and groups.
-- [The Guard Bot](https://github.com/thedevs-network/the-guard-bot): A Telegram bot to moderate groups.
+Back in 2016, I created a programming community called The Devs[^thedevs]. It's a network of programming groups on Telegram that welcomes programmers from all around the globe. I've met good people there, and we've been running the community together since. I've worked on a few open source projects under that name and shared them on GitHub[^github].
 
-Check out my [my GitHub](https://github.com/poeti8) for more.
+This was me—or rather the technical me—in a nutshell, but what about you and your stories? I'll be happy to hear them out, either by the contacts page or an email, if you ever feel sharing them with me.
 
-
-Want to say hi? Contact me via email [hi@pouria.dev](mailto:hi@pouria.dev) or Telegram <a href="https://t.me/poeti8" target="_blank" rel="noopener noreferrer">@poeti8</a>.
+[^a1000joys]: [youtube.com/@a1000joys](https://www.youtube.com/@a1000joys)
+[^thedevs]: [thedevs.network](https://thedevs.network)
+[^github]: [github.com/poeti8](https://github.com/poeti8)
