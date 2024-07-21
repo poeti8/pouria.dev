@@ -106,8 +106,9 @@ figure {
   align-items: center;
 }
 
-.you-did-it img {
-  max-width: 95%;
+.you-did-it .gatsby-image-wrapper {
+  width: 95%;
+  height: auto;
   margin-bottom: 24px;
 }
 
@@ -138,7 +139,7 @@ body.all-erased .you-did-it {
 }
 
 body.all-erased .you-did-it * {
-  display: block;
+  display: inherit;
 }
 
 a,

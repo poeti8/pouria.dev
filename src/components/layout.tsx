@@ -4,6 +4,7 @@ import shuffle from "shuffle-array";
 import Rellax from "rellax";
 import konami from "konami";
 import "modern-normalize/modern-normalize.css";
+import Img from "gatsby-image"
 
 import "./layout.css";
 import { AnimationContext, VisitsContext } from "./root";
@@ -45,6 +46,25 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
             }
           }
         }
+        allFile(
+          filter: {childImageSharp: {fluid: {originalName: {eq: "you-did-it.jpg"}}}}
+        ) {
+          edges {
+            node {
+              base
+              childImageSharp {
+                fluid {
+                  aspectRatio
+                  sizes
+                  base64
+                  src
+                  srcSet
+                  originalName
+                }
+              }
+            }
+          }
+        }
       }
     `
   );
@@ -75,7 +95,7 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
   return (
     <>
       <div className="you-did-it">
-        <img src="/you-did-it.jpg" alt="you did it" />
+        {konamiActive ? <Img fluid={data.allFile.edges[0].node.childImageSharp.fluid} alt="you did it"  /> : null}
         <a
           id="you-did-it-link"
           href="http://kutt.it/bonus-btc"
