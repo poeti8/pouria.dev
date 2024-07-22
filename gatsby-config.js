@@ -76,6 +76,13 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path:`${__dirname}/content/works`,
+        name: `works`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
@@ -112,6 +119,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -191,6 +199,6 @@ module.exports = {
           include: /assets/,
         },
       },
-    },
+    }
   ],
 };

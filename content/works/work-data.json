@@ -1,0 +1,135 @@
+[
+  {
+    "title": "One Million Particles", 
+    "slug": "one-million-particles", 
+    "category": "experiment",
+    "date": "01/07/2024",
+    "descriptions": [
+      {
+        "text": "Animating 1,000,000 particles in the browser using the GPGPU technique.",
+        "fontSize": 18
+      },
+      {
+        "text": "Play with the particles by moving your cursor or finger.",
+        "fontSize": 20
+      }
+    ],
+    "linkText": "View →",
+    "link": "https://pouria.dev/one-million-particles",
+    "fontSize": 22 
+  },
+  {
+    "title": "What Can You Do with a Particle?", 
+    "slug": "what-can-you-do-with-a-particle", 
+    "category": "video", 
+    "date": "01/07/2024",
+    "descriptions": [
+      {
+        "text": "Various kind of shapes and images you can create with particles.",
+        "fontSize": 20
+      },
+      {
+        "text": "And simulations like N-Body that you can run with them.",
+        "fontSize": 20
+      }
+    ],
+    "linkText": "Watch →",
+    "link": "https://www.youtube.com/watch?v=7aynyPX80BQ",
+    "fontSize": 20 
+  },
+  {
+    "title": "An Intoruction to 3D Graphics", 
+    "slug": "an-introduction-to-3d-graphics", 
+    "category": "video", 
+    "date": "16/12/2023",
+    "descriptions": [
+      {
+        "text": "Explaining the basics of 3D graphics in WebGL and Three.js.",
+        "fontSize": 20
+      },
+      {
+        "text": "Learn about shaders, matrices, models and more.",
+        "fontSize": 20
+      }
+    ],
+    "linkText": "Watch →",
+    "link": "https://www.youtube.com/watch?v=7eDGJ5okDGw",
+    "fontSize": 20 
+  },
+  {
+    "title": "Unknown Pleasures", 
+    "slug": "unknown-pleasures", 
+    "category": "experiment", 
+    "date": "03/04/2023",
+    "descriptions": [
+      {
+        "text": "Visualizing the famous Unknown Pleasures album artwork.",
+        "fontSize": 20
+      },
+      {
+        "text": "Animations that are inspired by the music and lyrics.",
+        "fontSize": 20
+      }
+    ],
+    "linkText": "View →",
+    "link": "https://pouria.dev/unknown-pleasures",
+    "fontSize": 22 
+  },
+  {
+    "title": "Telegram Directory", 
+    "slug": "telegram-directory", 
+    "category": "website", 
+    "date": "29/06/2018",
+    "descriptions": [
+      {
+        "text": "Discover the content you love on Telegram.",
+        "fontSize": 20
+      },
+      {
+        "text": "Leave reviews for channels, bots and groups.",
+        "fontSize": 20
+      }
+    ],
+    "linkText": "View →",
+    "link": "https://tgdr.io",
+    "fontSize": 22 
+  },
+  {
+    "title": "Kutt", 
+    "slug": "kutt", 
+    "category": "website", 
+    "date": "13/02/2018",
+    "descriptions": [
+      {
+        "text": "Free and open source URL shortener.",
+        "fontSize": 20
+      },
+      {
+        "text": "Manage links, set custom domains, and view statistics.",
+        "fontSize": 20
+      }
+    ],
+    "linkText": "View →",
+    "link": "https://kutt.it",
+    "fontSize": 22 
+  }, 
+  {
+    "title": "The Devs", 
+    "slug": "the-devs", 
+    "category": "website", 
+    "date": "11/11/2016",
+    "descriptions": [
+      {
+        "text": "Developers community on Telegram.",
+        "fontSize": 20
+      },
+      {
+        "text": "More than 20 programming groups to join.",
+        "fontSize": 20
+      }
+    ],
+    "linkText": "View →",
+    "link": "https://thedevs.network",
+    "fontSize": 22
+   }
+]

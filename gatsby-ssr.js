@@ -25,6 +25,14 @@ export const onRenderBody = ({ setHeadComponents }) => {
       as="font"
       type="font/woff2"
       crossOrigin="anonymous"
+    />,
+    <link
+      key="caveat"
+      rel="preload"
+      href="/fonts/caveat.woff2"
+      as="font"
+      type="font/woff2"
+      crossOrigin="anonymous"
     />
   ]);
 };

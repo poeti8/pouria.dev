@@ -5,6 +5,7 @@ import { getCookies, SERVER_URL } from "../utils";
 export const AnimationContext = createContext(true);
 export const ContactAnimationContext = createContext(true);
 export const ContactSubmitAnimationContext = createContext(true);
+export const WorksAnimationContext = createContext(true);
 export const VisitsContext = createContext();
 
 const Root: FC<{ path: string }> = ({ children, path }) => {
@@ -12,6 +13,7 @@ const Root: FC<{ path: string }> = ({ children, path }) => {
   const [rendered, setRendered] = useState(false);
   const contactAnimationState = useState(false);
   const contactSubmitAnimationState = useState(false);
+  const worksAnimationState = useState(false);
   const [visits, setVisits] = useState();
   const landingRef = useRef(true);
 
@@ -50,7 +52,9 @@ const Root: FC<{ path: string }> = ({ children, path }) => {
       <ContactAnimationContext.Provider value={contactAnimationState}>
         <ContactSubmitAnimationContext.Provider value={contactSubmitAnimationState}>
           <VisitsContext.Provider value={visits}>
-            {children}
+            <WorksAnimationContext.Provider value={worksAnimationState}>
+              {children}
+            </WorksAnimationContext.Provider>
           </VisitsContext.Provider>
         </ContactSubmitAnimationContext.Provider>
       </ContactAnimationContext.Provider>

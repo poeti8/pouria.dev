@@ -126,7 +126,7 @@ const Layout: FC<{ location: any }> = ({ children, location }) => {
               {[
                 ["/", "blog"],
                 ["/about/", "about"],
-                ["/uses/", "uses"],
+                ["/works/", "works"],
                 ["/photography/", "photography"],
                 ["/contact/", "contact"],
               ].map(([path, name]) => (

@@ -88,7 +88,7 @@ const PageTemplate: FC<Props> = ({ data, location }) => {
 
 export const query = graphql`
   query {
-    allFile(filter: {sourceInstanceName: {eq: "photography"}}) {
+    allFile(filter: {sourceInstanceName: { eq: "photography" }}) {
       edges {
         node {
           base
