@@ -81,7 +81,7 @@ Here are some notable configurations:
 ### Applications.
 
 - [1Password](https://1password.com/), manage passwords.
-- Adobe [Premiere](https://www.adobe.com/products/premiere.html) and [After Effects](https://www.adobe.com/products/aftereffects.html), to make video.
+- Adobe [Premiere](https://www.adobe.com/products/premiere.html) and [After Effects](https://www.adobe.com/products/aftereffects.html), to make [videos](https://youtube.com/@a1000joys).
 - [Affinity Photo 2](https://affinity.serif.com/en-us/photo/), edit the photos I've taken with my camera.
 - [Alfred 4](https://www.alfredapp.com), launcher, clipboard manager, scripts and more.
 - [Amethyst](https://github.com/ianyh/Amethyst), I wasn't into window managers until I used this one.
