@@ -40,7 +40,9 @@ module.exports = {
       "I care so much about my website being responsive, I just hope you're not visiting from mobile.",
       "This website is not tested, proceed with caution !!1!",
       "Try ↑ ↑ ↓ ↓ ← → ← → B A.",
+      "I followed the Nasty-CSS styleguide. It's when you write nasty CSS. I made it up.",
       "You made the visit number NaN (counting since 16 July 2024.)",
+      "I know the secret of universe. It's... it's... [object Object]."
     ],
   },
   plugins: [
