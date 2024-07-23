@@ -17,8 +17,10 @@ interface Props {
 const PageTemplate: FC<Props> = ({ data, location }) => {
   useEffect(() => {
     document.body.classList.add("dark");
+    document.querySelector('meta[name="theme-color"]').setAttribute("content",  "#1c1a1d");
     return () => {
       document.body.classList.remove("dark");
+      document.querySelector('meta[name="theme-color"]').setAttribute("content",  "#e5cbff");
     }
   }, []);
 
