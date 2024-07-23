@@ -69,14 +69,14 @@ const PageTemplate: FC<Props> = ({ data, location }) => {
     workFront.classList.add("back-back");
     workFront.classList.add("move");
 
-    // setTimeout(() => {
-    //   if (work.classList.contains("hovered")) {
-    //     workFront.classList.add("move-hovered");
-    //     setTimeout(() => {
-    //       workFront.classList.remove("move-hovered");
-    //     }, 100);
-    //   }
-    // }, 400);
+    setTimeout(() => {
+      if (work.classList.contains("hovered")) {
+        workFront.classList.add("move-hovered");
+        setTimeout(() => {
+          workFront.classList.remove("move-hovered");
+        }, 100);
+      }
+    }, 400);
 
     setTimeout(() => {
       workBackBack.classList.remove("animating");
