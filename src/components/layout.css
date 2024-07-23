@@ -801,15 +801,18 @@ body.works main {
   z-index: 3; 
 }
 
-.work:hover .work-photo.back-back {
+.work:hover .work-photo.back-back,
+.work-photo.back-back.animating {
   transform: rotate(10deg) scale(0.98);
 }
 
-.work:hover .work-photo.back {
+.work:hover .work-photo.back,
+.work-photo.back.animating {
   transform: rotate(5deg) scale(0.98);
 }
 
-.work:hover .work-photo.front {
+.work:hover .work-photo.front,
+.work-photo.front.animating {
   transform: translateY(-1%);
 }
 
