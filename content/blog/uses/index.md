@@ -47,6 +47,7 @@ Here are some notable configurations:
   "workbench.statusBar.visible": false,
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
+  "editor.inlayHints.enabled": "off",
   "workbench.activityBar.location": "hidden",
   "editor.bracketPairColorization.enabled": false,
   "editor.formatOnSave": false,
@@ -144,4 +145,4 @@ Here are some notable configurations:
 - [Pilot MR Metropolitan](https://www.penchalet.com/fine_pens/fountain_pens/pilot_mr_metropolitan_fountain_pen.html) fountain pen for writing.
 
 
-<small><i>last update: dec 11, 2023</i></small>
+<small><i>last update: 30 aug 2023</i></small>
