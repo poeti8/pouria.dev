@@ -20,7 +20,7 @@ I share my fascinations in _A Thousand Joys_[^a1000joys]—a YouTube channel tha
 
 Back in 2016, I created a programming community called The Devs[^thedevs]. It's a network of programming groups on Telegram that welcomes programmers from all around the globe. I've met good people there, and we've been running the community together since. I've worked on a few open source projects under that name and shared them on GitHub[^github].
 
-This was me—or rather the technical me—in a nutshell. Oh, and one more thing about me is that I don't know how to write a finishing paragraph so I—
+This was me—or rather the technical me—in a nutshell. Oh, and one more thing: I usually don't know how to write a finishing paragraph so I—
 
 [^a1000joys]: [youtube.com/@a1000joys](https://www.youtube.com/@a1000joys)
 [^thedevs]: [thedevs.network](https://thedevs.network)
