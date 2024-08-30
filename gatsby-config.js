@@ -39,6 +39,7 @@ module.exports = {
       "I could have published this website at least 2 weeks earlier if I hadn't used TypeScript.",
       "I care so much about my website being responsive, I just hope you're not visiting from mobile.",
       "This website is not tested, proceed with caution !!1!",
+      'No "AI" was used on any of my projects or writings.',
       "Try ↑ ↑ ↓ ↓ ← → ← → B A.",
       "I followed the Nasty-CSS styleguide. It's when you write nasty CSS. I made it up.",
       "You made the visit number NaN (counting since 16 July 2024.)",
