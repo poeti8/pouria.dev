@@ -71,6 +71,7 @@ const PageTemplate: FC<Props> = ({ data, location }) => {
             renderPhoto={({ photo, wrapperStyle, imageProps, layout }) => {
               return (
                 <div style={{ position: "relative", ...wrapperStyle }}>
+                  {/* <span style={{ position: "absolute", width: 20, fontSize: 14, textAlign: "center", padding: "1px 0", zIndex: 1, backgroundColor: "rgba(0, 0, 0, 0.5)" }}>{photo.order}</span> */}
                   <PhotoView index={layout.index} src={photo.src}>
                     <div className="photograph">
                       <Img fluid={photo.fluid} />
