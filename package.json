@@ -60,7 +60,7 @@
     "url": "git+https://github.com/poeti8/pouria.dev.git"
   },
   "scripts": {
-    "build": "gatsby build",
+    "build": "gatsby clean && gatsby build",
     "dev": "gatsby develop",
     "dev-m": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
